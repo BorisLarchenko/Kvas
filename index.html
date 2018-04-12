@@ -155,7 +155,41 @@
 		<h2>Заказать</h2>
 		<p>Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
 		<form class="order-form" action="/kvas-team-mail">
-
+			<div class="order-form-group">
+				<label for="name">Представьтесь:</label>
+				<input type="text" id="name" name="order-name">
+			</div>
+			<div class="order-form-group">
+				<label for="phone">Номер телефона:</label>
+				<input type="text" name="order-phone" id="phone">
+			</div>
+			<div class="order-form-group">
+				<label for="phone-more">Доп. номер:</label>
+				<input type="text" name="order-phone-more" id="phone-more">
+			</div>
+			<div class="order-form-group">
+				<label for="mail">Email:</label>
+				<input type="text" name="order-mail" id="mail">
+			</div>
+			<div class="order-form-group">
+				<label for="value">Объем заказа:</label>
+				<select name="order-value" id="value">
+					<option value="from5-to10">От 5 до 10 баррелей в неделю</option>
+					<option value="from10-to20">От 10 до 20 баррелей в неделю</option>
+					<option value="from20-to50">От 20 до 50 баррелей в неделю</option>
+				</select>
+			</div>
+			<div class="order-form-group">
+				<label for="message">Доп. комментарий:</label>
+				<textarea name="order-message" id="message" cols="30" rows="10"></textarea>
+			</div>
+			<div class="checkbox-area">
+				<label>
+					<input type="checkbox" name="subscription">
+					Я согласен получать квасную рассылку
+				</label>
+			</div>
+			<input type="submit" class="btn" value="Отправить заказ">
 		</form>
 	</div>
 </body>
